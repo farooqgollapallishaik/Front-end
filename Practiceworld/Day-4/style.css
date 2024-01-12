@@ -1,0 +1,37 @@
+.navbar{
+    height: 75px;
+    width: 100%;
+    background-color: aquamarine;
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+ }
+
+.navbar > nav > h3{
+    margin-top: 10px;
+}
+.glyphicon {
+    position: relative;
+    top: 5px;
+}
+ .navbar > nav > .links  {
+    list-style-type: none;
+    display: flex;
+ }
+ .links >li >a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(114, 117, 116);
+ }
+ .navbar > nav  .icons {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+ }
+ .icons >li >a{
+    text-decoration: none;
+    
+ }

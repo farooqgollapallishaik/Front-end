@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
+" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+            background-color: black;
+            color: white;
+            margin: 0px;
+        }
+        ul > li{
+            display: inline-grid;
+        }
+        ul > li > a{
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            font-family: monospace;
+
+        }
+        ul > li > a:hover{
+            background-color: darkblue;
+            transition-duration: .8s;
+        }
+        .your-class{
+            position: relative;
+        }
+        .your-class div{
+            height: calc(100vh - 35px);
+            background-size: cover;
+        }
+        div.one{
+            background-image: url('./images.jpeg');
+        }
+        div.two{
+            background-image: url('./istockphoto-1381494380-612x612.jpg');
+        }
+        div.three{
+            background-image: url('./lands-endslide__800x600.jpg');
+        }
+        .slick-prev{
+            left: 0px;
+            transform: translate(-50%, -50%);
+        }
+        .slick-prev::after{
+            content: ' ';
+            position: relative;
+            top: 0px;
+            right: 0px;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(135deg) translate(-22px, -10px);
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+        }
+        .slick-next::after{
+            content: ' ';
+            position: relative;
+            top: 0px;
+            right: 0px;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(45deg) translate(-25px, 27px);
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+        }
+        .slick-next{
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+        .slick-arrow{
+            color: transparent;
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            background: rgba(255, 255 ,255 , .4);
+            border: 0;
+            padding: 20px;
+            height: 100px;
+            border-radius: 100%;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/html/">HTML</a> 
+            </li>
+            <li>
+                <a href="/css/">CSS</a>
+            </li>
+            <li>
+                <a href="/js/">JavaScript</a>
+            </li>
+            <li>
+                <a href="/python/">Python</a>
+            </li>
+            <li>
+                <a href="/js/">JavaScript</a>
+            </li>
+            <li>
+                <a href="/python/">Python</a>
+            </li>
+            <li>
+                <a href="/js/">SQL</a>
+            </li>
+            <li>
+                <a href="/python/">Python</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="your-class">
+        <div class="one">
+        </div>
+        <div class="two">
+        </div>
+        <div class="three">
+        </div>
+    </div>
+<script>
+    $('.your-class').slick({
+
+  // normal options...
+        infinite: true,
+        // the magic
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                infinite: true
+            }
+            }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                dots: true
+            }
+            }, {
+            breakpoint: 300,
+            settings: "unslick" // destroys slick
+        }]
+    });
+</script>
+</body>
+</html>

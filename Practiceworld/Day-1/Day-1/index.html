@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        ul {
+            list-style-type: none;
+            background-color: rgb(121, 133, 245);
+            margin: 0px;
+        }
+
+        li {
+            display: inline-grid;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(121, 133, 245);
+        }
+        a{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        ul>li>a:hover {
+            background-color: rgb(180, 191, 240);
+            transition-duration: .8s;
+        }
+
+        input {
+            background-color: rgb(121, 133, 245);
+            border: 0px;
+            border-bottom: 1px solid white;
+            color: white;
+            margin: 9px;
+            padding-bottom: 4px;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Navbar">Navbar</a></li>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Features">Features</a></li>
+            <li><a href="Pricing">Pricing</a></li>
+            <li><a href=""Dropdown>Dropdown</a></li>
+        </ul>
+        <ul>
+            <li>
+                <input type="text" placeholder="Search">
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box animation</title>
+    <style>
+        .box{
+            /* margin-left: 300px; */
+            height:100px;
+            width: 100px;
+            background-color: rgb(228, 214, 26);
+            position: relative;
+            transform:translate(20px);
+            animation:mymoves 5s;
+        }
+        p{
+           padding-top: 40px;
+           padding-left: 20px;
+        }
+        @keyframes mymoves{
+            0%{
+                top:300px; left: 0px;
+            }
+            
+            25%{
+                top:0px; left:150px;
+            }
+            50%{
+                top:300px; left:300px;
+            }
+            
+            75%{
+                top:0px; left:0px;
+            }
+
+            100%{
+                top:0px; left:0px;
+            }
+    
+
+
+    </style>
+</head>
+<body>
+   <div class="box">
+    <p>Main Box</p>
+   </div>
+</body>
+</html>

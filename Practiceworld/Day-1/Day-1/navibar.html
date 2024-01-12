@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Nav bar2</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(4, 173, 173);
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        ul{
+            list-style-type:none;
+             cursor: pointer;
+        }
+        li{
+            display: inline-grid;
+            padding: 5px;
+            color: white;
+            font-size: larger;
+            font-family: sans-serif;
+        }
+        .icons > li > a{
+            color: #ffffff;
+            text-decoration: none;
+            padding-top: 10px;
+            padding-right: 40px;
+        }
+        .glyphicon{
+            padding-right:  9px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Navbar"></a>Navbar</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="#"><i class="glyphicon glyphicon-envelope"></i>Contact</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-cog"></i>Settings</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>Profile</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

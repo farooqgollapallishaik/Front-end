@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra nav</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        ul{
+            background-color: white;
+            list-style-type:none;
+            display: flex;
+            align-items: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        li{
+            display: inline-grid;
+            padding-right: 15px ;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 2px solid rgb(248, 247, 247);
+        }
+        nav {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        }
+        ul > li > input{
+            width: 330px;
+            background-color: rgb(212, 208, 208);
+            border: 0px;
+            padding: 8px;
+            border-radius: 4px;
+            position: relative;
+            text-indent: 30px;
+        }
+        .logo  > img{
+            display: inline-block;
+            vertical-align: middle;
+            padding-right:  10px;
+            margin: 0;
+            height: 50px;
+            cursor: pointer;
+        }
+        ul> li.search{
+            position: relative;
+        }
+        ul > li.search > i{
+           position: absolute;
+           z-index: 1;
+           top: 50%;
+           left: 0px;
+           transform: translate(11px, -50%);
+        }
+        ul>li>i{
+            text-align: center;
+        }
+        ul > li:hover {
+                border-bottom:2px solid  #ee5f73;
+                cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo">
+                <img src="./myntra.png">
+            </li>
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>KIDS</li>
+            <li>HOME & LIVING</li>
+            <li>BEAUTY</li>
+            <li>STUDIO</li>
+        </ul>
+        <ul>
+            <li class="search">
+                <i class="glyphicon glyphicon-search"></i>
+                <input class="search" placeholder="Search for products,,brands and more">
+            </li>
+            <li><i class="glyphicon glyphicon-user"></i>Profile</li>
+            <li><i class="glyphicon glyphicon-heart-empty"></i>Whishlist</li>
+            <li><i class="glyphicon glyphicon-shopping-cart"></i>Bag</li>
+        </ul>
+    </nav>
+</body>
+</html>
